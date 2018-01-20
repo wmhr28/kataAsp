@@ -2,14 +2,16 @@
 using System.Web;
 using System.Web.UI;
 
-namespace kataAsp
-{
+namespace kataAsp {
+    public partial class Default : System.Web.UI.Page {
+        public int exampleSum() {
+            return 9;    
+        }
 
-    public partial class Default : System.Web.UI.Page
-    {
-        public void button1Clicked(object sender, EventArgs args)
-        {
-            button1.Text = "You clicked me";
+        public object nashPrisoner() {
+            //Console.Out.WriteLine("data");
+            var exampleClass = new exampleClass();
+            return exampleClass;
         }
     }
 }
